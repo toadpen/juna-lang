@@ -4,6 +4,6 @@ public class Main {
 
     public static void main(String[] args) {
         Interpret inter = new Interpret();
-        inter.getFileSource("src/main.juna");
+        inter.readInterpret("src/main.juna");
     }
 }

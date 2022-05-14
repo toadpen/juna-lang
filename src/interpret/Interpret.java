@@ -2,6 +2,7 @@ package interpret;
 
 import file.Files;
 
+import javax.security.auth.callback.TextOutputCallback;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -15,7 +16,7 @@ public class Interpret {
         inout = new IO();
     }
 
-    public void getFileSource(String fileSource)
+    public void readInterpret(String fileSource)
     {
         String out = "";
         try
@@ -39,6 +40,8 @@ public class Interpret {
     public void interpretFile(String input)
     {
         String[] splittedInputs = input.split(" ");
+        Route route = new Route();
+        route.findToken(splittedInputs);
 
     }
 }
