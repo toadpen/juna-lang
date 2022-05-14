@@ -39,17 +39,6 @@ public class Interpret {
     public void interpretFile(String input)
     {
         String[] splittedInputs = input.split(" ");
-        switch (splittedInputs[0])
-        {
-            case "print":
-                String strOut = "";
-                for(int i = 1; i < splittedInputs.length; i++)
-                {
-                    strOut += splittedInputs[i] + " ";
-                }
-                inout.print(strOut);
 
-
-        }
     }
 }
